@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Alviz Code | Profile Card</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="card">
+
+            <!-- TOP NAVIGATION -->
+            <div class="top-nav">
+                <span>
+                    <i class="fas fa-bars"></i>
+                </span>
+
+                <span>
+                    <i class="far fa-comment-alt"></i>
+                </span>
+            </div>
+
+            <!-- FRONT CARD -->
+            <div class="front">
+
+                <h1>alviz <br> code</h1>
+
+                <button class="btn">
+                    Profile
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+
+            </div>
+
+            <!-- CARD INFORMATION -->
+            <div class="card-info">
+
+                <!-- BUTTONS -->
+                <button class="btnplus">
+                    <i class="fas fa-plus"></i>
+                </button>
+
+                <button class="btn-c">
+                    <i class="fas fa-angle-down"></i>
+                </button>
+
+                <!-- NAME -->
+                <h1>alvizcode</h1>
+
+                <p class="web">Future Web Developer</p>
+
+                <hr>
+
+                <!-- SKILLS -->
+                <div class="skills">
+
+                    <span>Skills</span>
+
+                    <p>
+                        HTML, CSS, JavaScript, UI/UX Design,
+                        Creative Thinking, Teamwork
+                    </p>
+
+                </div>
+
+                <!-- PROJECTS -->
+                <div class="project">
+
+                    <span>Projects</span>
+
+                    <p>
+                        To-Do List Website, Web Calculator,
+                        Student Grade Checker,
+                        Random Quotes Generator
+                    </p>
+
+                </div>
+
+                <!-- FOLLOWERS -->
+                <div class="follow">
+
+                    <div class="followers">
+                        <span>Skills</span>
+                        <p>HTML · CSS · JS</p>
+                    </div>
+
+                    <div class="following">
+                        <span>Learning</span>
+                        <p>Web Development</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        const container = document.querySelector(".container");
+        const btn = document.querySelector(".btn");
+        const btnplus = document.querySelector(".btnplus");
+        const btnc = document.querySelector(".btn-c");
+
+        btn.addEventListener("click", function () {
+            container.classList.add("active");
+        });
+
+        btnplus.addEventListener("click", function () {
+            container.classList.toggle("active");
+        });
+
+        btnc.addEventListener("click", function () {
+            container.classList.remove("active");
+        });
+    </script>
+
+</body>
+</html>
